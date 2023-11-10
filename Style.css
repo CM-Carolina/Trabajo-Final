@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:  #181D31;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+header{
+    background-image: url(./assets/imagenes/codigo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    background-attachment: fixed;
+
+}
+/* -------------GENERALES----------------------- */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181D31;
+    padding: 10px;
+
+}
+
+svg{
+    width: 200px;
+    height: 80px;
+    transition: transform 0.3s;
+    animation: fadeIn 2s ease-in;
+    
+ }
+ 
+ svg:hover{
+    transform: scale(1.2);
+ }
+ 
+
+ @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+
+.contenedor-padre{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+    margin-right: 5%;
+    gap: 50px;
+}
+
+.item{
+    list-style-type: none;
+}
+
+.itemLink{
+    text-decoration: none;
+    color: #181D31;
+    background-color:  #E6DDC4;
+    width: 120px;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 10px; 
+    box-shadow:2px 3px #678983;
+}
+
+.itemLink:hover{
+    background-color: #b3bfbc;
+}
+.itemLink:active{
+    color:#F0F5E4;
+}
+
+
+.titulo-princ {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+}
+
+h1{
+    color: #EEEEEE;
+    font-size: 56px;
+    text-shadow: 2px 2px #678983, 6px 6px black;
+    
+}
+
+h2{
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+    color: #678983;
+}
+ 
+p{
+    display: inline-block;
+    font-size: 14px;
+    color: #E6DDC4;
+}
+
+
+
+/* ----------------- INDEX ------------------ */
+
+section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 85px;
+}
+
+
+.contenedor-hijo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px
+}
+
+.p-hijo{
+    
+    display: inline-block;
+    font-size: 16px;
+    color: #E6DDC4;
+    width: 60%;
+    margin: 10px;
+    line-height: 22px;
+}
+
+.art-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+.cont-video{
+    padding: 5px;
+    background-color: black;
+    width: 65%;
+}
+
+.barra-control{
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#botonera{
+    display: flex;
+    gap: 20px;
+}
+
+.btnRep{
+    background-color: #E6DDC4;
+    padding: 10px;
+    margin-left: 10px;
+    width: 80px;
+    border-radius: 10px;
+    box-shadow:2px 3px #678983; 
+}
+
+.btnRep:active{
+    cursor: pointer;
+}
+.texBarra{
+    padding-right: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+
+ video{
+    width: 100%;
+ }
+
+ /* ----------------PAGINA JUEGOS--------------- */
+ #juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+ .cont-caja{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+ }
+
+ 
+.cajitas{
+    width: 275px;
+    height: 400px;
+    display: flex;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.cajitas:hover{
+    background-color: #1d1d1d;
+}
+
+.img-juegos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+
+
+
+.reiniciar{
+    color: #181D31;
+    background-color:  #E6DDC4;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px; 
+    box-shadow:2px 3px #678983;
+    
+}
+.reiniciar:active{
+   cursor: pointer;
+}
+    
+   
+
+
+/*--------PAGINA "PROG E HISTORIA"---------------*/
+.contenedor-tarj{
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+
+ 
+
+#titulo-sec{
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+    color: #678983;
+    margin: 0%;
+    text-align: center;
+    
+}
+
+.tarjetas{
+    width: 350px;
+    height: 400px;
+    background-color: #E6DDC4;
+    border:5px solid #678983;
+    text-align: center;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cuerpo-tarj{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 166px;
+}
+
+.p-tarjeta {
+    align-self: flex-start;
+}
+
+.btn-tarjeta {
+    align-self: flex-end;
+    width: 100%;
+}
+
+#imgtarjeta{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.texto-tarjeta {
+    width: 90%;
+    height: 30px;
+    color: #181D31;
+    font-size: 15px;
+    
+    
+}
+
+.botonIr{
+    text-decoration: none;
+    color: #F0F5E4;
+    background-color: #181D31;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px; 
+    box-shadow:2px 3px #678983; 
+}
+
+.botonIr:hover{
+    background-color: #b3bfbc;
+}
+.botonIr:active{
+    color: #181D31;
+}
+
+
+/*------------------------------------------------*/
+
+footer{
+    background-color: #678983;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: #181D31;
+    
+}
+
+#logo{
+    height: 70px;
+}
+
+.p-footer{
+    font-size: 14px;
+    width: 100%;
+    color: #181D31
+}
+
+.title-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bolder;
+    gap: 10px;
+
+}
+
